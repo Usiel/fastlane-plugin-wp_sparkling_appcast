@@ -29,7 +29,7 @@ module Fastlane
         zip_request = Net::HTTP::Post.new(zip_uri)
         zip_request.basic_auth(params[:wp_user], params[:wp_application_pw])
         zip_request['Content-Type'] = 'application/zip'
-        zip_request['Content-Disposition'] = "attachment; filename=\"#{File.basename(params[:zip_file])}\""
+        zip_request['Content-Disposition'] = "attachment; filename=\"#{File.basename(params[:zip_file], '.zip')}-#{params[:build_version]}-#{params[:build_number]}.zip\""
         
         zip_data = File.read(params[:zip_file])
         zip_request.body = zip_data
