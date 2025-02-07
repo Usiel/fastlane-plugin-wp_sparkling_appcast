@@ -1,0 +1,3 @@
+lane :test do
+  wp_sparkling_appcast
+end
