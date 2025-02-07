@@ -50,9 +50,9 @@ end
 | base_url | Base URL of your WordPress installation | String | Yes | - |
 | wp_user | WordPress username for authentication | String | Yes | - |
 | wp_application_pw | WordPress application password for authentication | String | Yes | - |
-| build_version | Version number of the build (e.g. 1.2.3). Will be extracted from app bundle if not provided | String | No | - |
-| build_number | Build number. Will be extracted from app bundle if not provided | Integer | No | - |
-| min_system_version | Minimum system version required. Will be extracted from app bundle if not provided | String | No | - |
+| build_version | Version number of the build (e.g. 1.2.3) | String | No | App bundle's build version |
+| build_number | Build number | Integer | No | App bundle's build number |
+| min_system_version | Minimum system version required | String | No | App bundle's minimum system version |
 | changelog | Changelog for this version | String | No | "" |
 | zip_file | Path to the zip file to upload | String | Yes | - |
 | track | Track ID for this build | Integer | Yes | - |
