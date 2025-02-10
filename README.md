@@ -12,7 +12,7 @@ fastlane add_plugin wp_sparkling_appcast
 
 ### Requirements
 
-- WordPress installation with the Sparkling Appcast plugin
+- WordPress installation with the [Sparkling Appcast plugin](https://github.com/Usiel/sparkling-appcast)
 - WordPress Application Password for authentication
 - macOS app packaged as a zip file
 - Sparkle framework integration in your app
@@ -45,17 +45,17 @@ end
 
 ### Parameters
 
-| Key | Description | Type | Required | Default |
-|-----|-------------|------|----------|---------|
-| base_url | Base URL of your WordPress installation | String | Yes | - |
-| wp_user | WordPress username for authentication | String | Yes | - |
-| wp_application_pw | WordPress application password for authentication | String | Yes | - |
-| build_version | Version number of the build (e.g. 1.2.3) | String | No | App bundle's build version |
-| build_number | Build number | Integer | No | App bundle's build number |
-| min_system_version | Minimum system version required | String | No | App bundle's minimum system version |
-| changelog | Changelog for this version | String | No | "" |
-| zip_file | Path to the zip file to upload | String | Yes | - |
-| track | Track ID for this build | Integer | Yes | - |
+| Key                | Description                                       | Type    | Required | Default                             |
+| ------------------ | ------------------------------------------------- | ------- | -------- | ----------------------------------- |
+| base_url           | Base URL of your WordPress installation           | String  | Yes      | -                                   |
+| wp_user            | WordPress username for authentication             | String  | Yes      | -                                   |
+| wp_application_pw  | WordPress application password for authentication | String  | Yes      | -                                   |
+| build_version      | Version number of the build (e.g. 1.2.3)          | String  | No       | App bundle's build version          |
+| build_number       | Build number                                      | Integer | No       | App bundle's build number           |
+| min_system_version | Minimum system version required                   | String  | No       | App bundle's minimum system version |
+| changelog          | Changelog for this version                        | String  | No       | ""                                  |
+| zip_file           | Path to the zip file to upload                    | String  | Yes      | -                                   |
+| track              | Track ID for this build                           | Integer | Yes      | -                                   |
 
 ## Issues and Feedback
 
