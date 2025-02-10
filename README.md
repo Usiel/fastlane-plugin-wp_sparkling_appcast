@@ -1,6 +1,6 @@
 # wp_sparkling_appcast plugin
 
-This fastlane plugin helps you distribute your macOS app updates using WordPress's Sparkling Appcast plugin. It automates the process of uploading your app's zip file and creating the necessary entries for Sparkle's appcast.xml feed.
+This fastlane plugin helps you distribute your macOS app updates using [WordPress's Sparkling Appcast plugin](https://github.com/Usiel/sparkling-appcast). It automates the process of uploading your app's zip file and creating the necessary entries for Sparkle's appcast.xml feed.
 
 ## Getting Started
 
