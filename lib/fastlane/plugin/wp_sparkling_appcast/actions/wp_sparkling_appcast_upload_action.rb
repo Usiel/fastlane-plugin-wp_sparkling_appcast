@@ -3,7 +3,8 @@ require_relative '../helper/wp_sparkling_appcast_helper'
 
 module Fastlane
   module Actions
-    class WpSparklingAppcastAction < Action
+    class WpSparklingAppcastUploadAction < Action
+
       def self.run(params)
         UI.message("Starting upload to WordPress Sparkling Appcast...")
         
@@ -52,7 +53,7 @@ module Fastlane
 
       def self.example_code
         [
-          'wp_sparkling_appcast(
+          'wp_sparkling_appcast_upload(
             base_url: "https://your-wordpress-site.com",
             wp_user: "your-username",
             wp_application_pw: ENV["WP_APP_PASSWORD"],

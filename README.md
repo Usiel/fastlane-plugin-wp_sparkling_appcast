@@ -32,7 +32,7 @@ lane :release do
   )
 
   # Upload to WordPress and create appcast entry
-  wp_sparkling_appcast(
+  wp_sparkling_appcast_upload(
     base_url: "https://your-wordpress-site.com",
     wp_user: "your-username",
     wp_application_pw: ENV["WP_APP_PASSWORD"],
