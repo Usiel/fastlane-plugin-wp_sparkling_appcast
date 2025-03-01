@@ -6,7 +6,7 @@ describe Fastlane::Actions::WpSparklingAppcastAction do
       base_url: 'https://example.com',
       wp_user: 'testuser',
       wp_application_pw: 'testpass',
-      track: 'beta',
+      channel: 'beta',
       changelog: 'Test changelog'
     }
   end

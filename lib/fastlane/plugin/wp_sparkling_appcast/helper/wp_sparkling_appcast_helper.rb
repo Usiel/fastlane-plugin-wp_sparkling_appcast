@@ -58,7 +58,7 @@ module Fastlane
             sappcast_app_build_attachment_id: attachment_id,
             sappcast_app_build_changelog: params[:changelog]
           },
-          sappcast_track: params[:track],
+          sappcast_channel: params[:channel],
           status: 'draft'
         }
 

@@ -38,7 +38,7 @@ lane :release do
     wp_application_pw: ENV["WP_APP_PASSWORD"],
     changelog: "## Changes\n- Fixed some bugs\n- Added new features",
     zip_file: "build/YourApp.zip",
-    track: 123
+    channel: 123
   )
 end
 ```
@@ -55,7 +55,7 @@ end
 | min_system_version | Minimum system version required                   | String  | No       | App bundle's minimum system version |
 | changelog          | Changelog for this version                        | String  | No       | ""                                  |
 | zip_file           | Path to the zip file to upload                    | String  | Yes      | -                                   |
-| track              | Track ID for this build                           | Integer | Yes      | -                                   |
+| channel            | channel ID for this build                         | Integer | Yes      | -                                   |
 
 ## Issues and Feedback
 

@@ -59,7 +59,7 @@ module Fastlane
             wp_application_pw: ENV["WP_APP_PASSWORD"],
             changelog: "## Changes\n- Fixed some bugs\n- Added new features",
             zip_file: "path/to/YourApp.zip",
-            track: 1
+            channel: 1
           )'
         ]
       end
@@ -135,9 +135,9 @@ module Fastlane
             end
           ),
           FastlaneCore::ConfigItem.new(
-            key: :track,
-            env_name: "WP_SPARKLING_APPCAST_TRACK",
-            description: "Track ID for this build",
+            key: :channel,
+            env_name: "WP_SPARKLING_APPCAST_CHANNEL",
+            description: "Channel ID for this build",
             type: Integer,
             optional: false
           )
